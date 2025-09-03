@@ -1,0 +1,1140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Sans-serif;
+}
+
+
+.maincont {
+    /* margin-top: 80px; */
+}
+
+/* common style start */
+
+
+
+.rows {
+    align-items: center !important;
+    justify-content: center !important;
+    display: flex !important;
+}
+
+.mbl {
+    display: none;
+}
+
+/* common style end */
+
+
+/* banner style start */
+
+.textsec {
+    position: absolute;
+    color: #fff;
+    margin-left: 50px;
+}
+
+.bannersec {
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+
+.lines {
+    width: 40%;
+    border: 2px solid #F8B03B;
+    margin: 30px 0px;
+}
+
+
+
+
+/* banner style end */
+
+
+/* about style start */
+
+.abimg {
+    border: 3px solid #F8B03B;
+}
+
+.aboutsec {
+    margin-top: 50px;
+}
+
+.abouthead,
+.protext2,
+.brandtext2,
+.agtext2,
+.pro1text2,
+.safetytext2 {
+    color: #19529E;
+    /* font-size: 35px ; */
+    font-weight: 550;
+}
+
+.abouttext1 {
+    color: #19529E;
+    margin-bottom: 10px;
+}
+
+.counter-section {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.line1 {
+    width: 18.5%;
+    border: 2px solid #19529E;
+    margin-bottom: 20px;
+}
+a:hover{
+    color:rgb(24, 133, 77) !important;
+}
+.readbtn{
+   background-color: rgb(24, 133, 77);
+    transition:1s;
+    border: 0;
+}
+.readbtn:hover{
+    background-color:#000 !important;
+    border-radius:30px;
+    transition:1s;
+    transform: scale(1.1);
+}
+
+/* about style end */
+
+
+/* prosec  style start */
+
+.prosec {
+    margin-top: 50px;
+}
+
+
+
+.line2 {
+    width: 45%;
+    border: 2px solid #19529E;
+    margin: 15px auto;
+}
+
+.protext3 {
+    width: 50%;
+    margin: auto;
+}
+
+.mbl {
+    display: none;
+}
+
+.about-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    max-width: 100% !important;
+}
+
+.proimgs {
+    max-width: 220px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 4px solid #69B881 !important;
+    margin: 20px;
+    /*padding: 20px;*/
+}
+
+
+
+.proimg {
+    padding: 10px;
+    max-width: 100%;
+}
+
+/* prosec  style end */
+
+
+/*  prosec1 style start */
+
+/*  prosec1 style end */
+
+
+/* brandsec style start */
+
+.brandsec {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.brandtext1 {
+    color: #19529E
+}
+
+.line4 {
+    width: 30%;
+    border: 2px solid #19529E;
+    margin: 15px auto;
+}
+
+.brandtext3 {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.logosec {
+    margin: 5px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.logosec1 {
+    align-items: start;
+    justify-content: center;
+    display: flex;
+}
+
+.brlogo {
+    max-width: 25%;
+    border: 1px solid #000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+}
+
+.brandsec .row .col-6 {
+    padding: 0px;
+    /* align-items: center;
+    justify-content: left;
+    display: flex; */
+}
+
+
+
+.brlogo {
+    max-width: 25%;
+  border: 4px solid #69B881 !important;
+    padding: 10px;
+}
+
+.aglogo {
+    max-width: 150px;
+    border: 4px solid #69B881 !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+}
+
+.scroller {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg,
+            transparent,
+            #F5F5F5 20%,
+            #F5F5F5 80%,
+            transparent);
+    mask: linear-gradient(90deg, transparent, #F5F5F5 10%, #F5F5F5 90%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 0s) var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+}
+
+
+.scroller[data-speed="slow"] {
+    --_animation-duration: 25s;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+
+
+/* brandsec style end */
+
+
+/* exsec style start */
+
+.exsec {
+    margin-top: 50px;
+}
+
+.exsecbg {
+    background-color:  rgb(24, 133, 77);
+    padding: 50px 50px;
+
+    color: #fff;
+}
+
+.ex-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+}
+
+.ex-item {
+
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.num,
+.num1 {
+    font-weight: 700;
+    font-size: 30px;
+
+}
+
+.text {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 0px;
+    font-weight:bold;
+}
+/*.ex-item1 ,.ex-item1 .text{*/
+/*    color:#fff !important;*/
+/*}*/
+
+/* exsec style end */
+
+
+/* agsec style start  */
+.agsec {
+    margin-top: 50px;
+}
+
+.agtext1 {
+    color: #19529E;
+    text-align: center;
+}
+
+.line5 {
+    width: 15%;
+    border: 2px solid #19529E;
+    margin: 15px auto;
+}
+
+.agtext3 {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.ag-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.ag-item {
+    background-color: #DDDDDD;
+    padding: 100px 0px;
+    font-size: 30px;
+    text-align: center;
+    margin: 5px;
+}
+
+/* agsec style end  */
+
+/* safetysec style start */
+.safetysec {
+    margin-top: 50px;
+}
+
+.safetytext1 {
+    color: #19529E
+}
+
+.line6 {
+    width: 25%;
+    border: 2px solid #19529E;
+    margin: 15px 0px;
+}
+
+.sfimg {
+    border: 3px solid #F8B03B;
+    max-width: 100%;
+}
+
+/* safetysec style end */
+
+
+
+/* responsive work start */
+
+@media screen and (min-width:1400px) {
+
+    /* common style start */
+    .bannertext1,
+    .abouttext1,
+    .protext1,
+    .pro1text1,
+    .brandtext1,
+    .agtext1,
+    .safetytext1 {
+        font-size: 25px;
+    }
+
+    .abouthead,
+    .protext2,
+    .brandtext2,
+    .agtext2,
+    .pro1text2,
+    .safetytext2 {
+        font-size: 35px;
+    }
+
+    .aboouttext2,
+    .protext3,
+    .pro1text3,
+    .brandtext3,
+    .agtext3,
+    .safetytext3 {
+        font-size: 16px;
+    }
+
+    /* common style end */
+
+
+    /* banner style start */
+    .bannertext2 {
+        font-size: 40px;
+        font-weight: 800;
+        width: 60%;
+    }
+
+    .bannertext3 {
+        width: 60%;
+    }
+
+    /* banner style end */
+
+
+    /*  prosec1 style start */
+    .proimg2 {
+        margin-top: 15.5px;
+    }
+
+    /*  prosec1 style end */
+
+
+
+}
+
+@media screen and (min-width:1300px) and (max-width:1399px) {
+
+    /* common style start */
+    .bannertext1,
+    .abouttext1,
+    .protext1,
+    .pro1text1,
+    .brandtext1,
+    .agtext1,
+    .safetytext1 {
+        font-size: 23px;
+    }
+
+    .abouthead,
+    .protext2,
+    .brandtext2,
+    .agtext2,
+    .pro1text2,
+    .safetytext2 {
+        font-size: 30px;
+    }
+
+    /* .aboouttext2,
+    .protext3,
+    .pro1text3,
+    .brandtext3,
+    .agtext3,
+    .safetytext3 {
+        font-size: 14px;
+    } */
+
+    /* common style end */
+
+
+    /* banner style start */
+    .bannertext2 {
+        font-size: 40px;
+        font-weight: 800;
+        width: 70%;
+    }
+
+    .bannertext3 {
+        width: 60%;
+    }
+
+    .proimg2 {
+        margin-top: 0px;
+        max-width: 99%;
+    }
+
+    .proimgs {
+        max-width: 200px;
+    }
+
+
+}
+
+@media screen and (min-width:1200px) and (max-width:1299px) {
+
+    /* common style start */
+    .bannertext1,
+    .abouttext1,
+    .protext1,
+    .pro1text1,
+    .brandtext1,
+    .agtext1,
+    .safetytext1 {
+        font-size: 23px;
+    }
+
+    .abouthead,
+    .protext2,
+    .brandtext2,
+    .agtext2,
+    .pro1text2,
+    .safetytext2 {
+        font-size: 30px;
+    }
+
+    /* .aboouttext2,
+    .protext3,
+    .pro1text3,
+    .brandtext3,
+    .agtext3,
+    .safetytext3 {
+        font-size: 14px;
+    } */
+
+    /* common style end */
+
+
+    /* banner style start */
+    .bannertext2 {
+        font-size: 35px;
+        width: 60%;
+    }
+
+    .bannertext3 {
+        width: 60%;
+    }
+
+    /* banner style end */
+
+
+
+    /*  prosec1 style start */
+    .proimg2 {
+        margin-top: 7px;
+    }
+
+
+
+    /* .pro1text {
+        height: 120px;
+    } */
+
+    /*  prosec1 style end */
+
+    .proimgs {
+        max-width: 200px;
+    }
+
+
+}
+
+@media screen and (min-width:1100px) and (max-width:1199px) {
+
+    /* common style start */
+    .bannertext1,
+    .abouttext1,
+    .protext1,
+    .pro1text1,
+    .brandtext1,
+    .agtext1,
+    .safetytext1 {
+        font-size: 19px;
+    }
+
+    .abouthead,
+    .protext2,
+    .brandtext2,
+    .agtext2,
+    .pro1text2,
+    .safetytext2 {
+        font-size: 27px;
+    }
+
+    /* .aboouttext2,
+    .protext3,
+    .pro1text3,
+    .brandtext3,
+    .agtext3,
+    .safetytext3 {
+        font-size: 14px;
+    } */
+
+    /* common style end */
+
+
+    /* banner style start */
+    .bannertext2 {
+        font-size: 30px;
+        width: 60%;
+    }
+
+    .bannertext3 {
+        width: 70%;
+    }
+
+    /* banner style end */
+
+
+
+    /* prosec  style start */
+    .proimg2 {
+        max-width: 99.4%;
+    }
+
+    .pro1head {
+        font-size: 20px;
+    }
+
+    .pro1text {}
+
+    /* prosec  style end */
+
+
+    /* exsec style start */
+
+    .num,
+    .num1 {
+        font-weight: 700;
+        font-size: 27px;
+
+    }
+
+    .text {
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 0px;
+    }
+
+    /* exsec style end */
+
+    .proimgs {
+        max-width: 160px;
+    }
+
+
+
+}
+
+@media screen and (min-width:992px) and (max-width:1099px) {
+
+    /* common style start */
+    .bannertext1,
+    .abouttext1,
+    .protext1,
+    .pro1text1,
+    .brandtext1,
+    .agtext1,
+    .safetytext1 {
+        font-size: 19px;
+    }
+
+    .abouthead,
+    .protext2,
+    .brandtext2,
+    .agtext2,
+    .pro1text2,
+    .safetytext2 {
+        font-size: 25px;
+    }
+
+    /* .aboouttext2,
+    .protext3,
+    .pro1text3,
+    .brandtext3,
+    .agtext3,
+    .safetytext3 {
+        font-size: 14px;
+    } */
+
+    /* common style end */
+
+
+    /* banner style start */
+    .bannertext2 {
+        font-size: 30px;
+        width: 60%;
+    }
+
+    .bannertext3 {
+        width: 60%;
+    }
+
+    /* banner style end */
+
+
+
+    /* prosec  style start */
+    .proimg2 {
+        max-width: 99.2%;
+    }
+
+    .pro1head {
+        font-size: 20px;
+    }
+
+
+    /* prosec  style end */
+
+
+    /* exsec style start */
+
+    .num,
+    .num1 {
+        font-weight: 700;
+        font-size: 27px;
+
+    }
+
+    .text {
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 0px;
+    }
+
+    /* exsec style end */
+
+    .proimgs {
+        max-width: 160px;
+    }
+
+  
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    /* common style start */
+
+    .abouttext1,
+    .protext1,
+    .pro1text1,
+    .brandtext1,
+    .agtext1,
+    .safetytext1 {
+        font-size: 17px;
+    }
+
+    .abouthead,
+    .protext2,
+    .brandtext2,
+    .agtext2,
+    .pro1text2,
+    .safetytext2 {
+        font-size: 25px;
+    }
+
+    /* .aboouttext2,
+    .protext3,
+    .pro1text3,
+    .brandtext3,
+    .agtext3,
+    .safetytext3,
+    .pro1text {
+        font-size: 14px;
+    } */
+
+    .about-item,
+    .ag-item {
+        padding: 70px 0px;
+    }
+
+    /* common style end */
+
+
+    /* banner style start */
+    .bannertext1 {
+        font-size: 15px;
+    }
+
+    .bannertextsec {
+        text-align: center;
+        padding: 50px;
+    }
+
+    .bannertext2 {
+        font-size: 20px;
+        font-weight: 800;
+        width: 70%;
+    }
+
+    .bannertext3 {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .lines {
+        margin: 15px 0px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+
+    /* banner style end */
+
+    /* aboutsec style start */
+
+    .tab {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .proimgs {
+        max-width: 150px;
+    }
+
+    /* aboutsec style end */
+
+    /* prosec  style start */
+    .proimg2 {
+        max-width: 99.2%;
+    }
+
+    .protext3 {
+        width: 70%;
+    }
+
+    .proimg2 {
+        max-width: 94.8%;
+    }
+
+    .pro1head {
+        font-size: 20px;
+    }
+
+
+
+    /* prosec  style end */
+
+    /* brsec  style start */
+    .brandtext3 {
+        width: 95%;
+    }
+
+    .col-1 {
+        display: none;
+    }
+
+
+
+
+    /* brsec  style end */
+
+    /* exsec style start */
+
+    .num,
+    .num1 {
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+
+    .exsecbg {
+        padding: 30px 20px;
+    }
+
+    .text {
+        font-size: 13px;
+        color: #fff;
+        margin-bottom: 0px;
+    }
+
+    /* exsec style end */
+
+    /* agsec style start */
+    .agtext3 {
+        width: 90%;
+    }
+
+}
+
+/* responsive work end  */
+
+
+
+@media screen and (max-width:767.9px) {
+ 
+
+    /* common style start */
+    .bannertext1,
+    .abouttext1,
+    .protext1,
+    .pro1text1,
+    .brandtext1,
+    .agtext1,
+    .safetytext1 {
+        font-size: 17px;
+    }
+
+    .abouthead,
+    .protext2,
+    .brandtext2,
+    .agtext2,
+    .pro1text2,
+    .safetytext2 {
+        font-size: 22px;
+    }
+
+    /* .aboouttext2,
+    .protext3,
+    .pro1text3,
+    .brandtext3,
+    .agtext3,
+    .safetytext3,
+    .pro1text {
+        font-size: 12px;
+    } */
+
+    .about-item,
+    .ag-item {
+        padding: 60px 0px;
+    }
+
+    .aboutsec .btn,
+    .safetysec .btn {
+        margin-bottom: 30px;
+    }
+
+    .protext3,
+    .agtext3 {
+        width: 100%;
+    }
+
+    .line5 {
+        width: 30%;
+    }
+
+    /* common style end */
+    /* banner style start */
+    .textsec {
+        margin-left: 20px;
+    }
+
+    .bannertext1 {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .bannertext2 {
+        font-size: 18px;
+        font-weight: 800;
+        width: 70%;
+    }
+
+    .bannertext3 {
+        width: 80%;
+        font-size: 11px;
+    }
+
+    .lines {
+        margin: 5px 0px;
+    }
+
+    .btn {
+        font-size: 11px;
+    }
+
+
+    /* banner style end */
+    /* exsec style start */
+    .ex-container {
+        grid-template-columns: auto auto;
+    }
+
+    .num,
+    .num1 {
+        font-size: 20px;
+
+    }
+
+    .exsecbg {
+        padding: 25px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    /* exsec style start */
+
+    /* prosec style start */
+
+    #prosec2,
+    .col-md-0 {
+        display: none;
+    }
+
+    .mbl {
+        display: block;
+    }
+
+    /* .logosec2 {}
+
+    .logosec2 img {
+        position: absolute;
+        max-width: 100%;
+    } */
+
+    .pro1head {
+        font-size: 20px;
+    }
+
+    /* prosec style end */
+
+
+    .desk {
+        display: none;
+    }
+
+    .mbl {
+        display: block;
+    }
+
+    .pro1text3,
+    .brandtext3 {
+        width: 100%;
+    }
+
+    .about-container {
+        grid-template-columns: auto auto;
+    }
+
+    .proimgs {
+        max-width: 200px;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+
+    /* bannersec style start */
+    .bannerimg {
+        display: none;
+    }
+
+    .textsec {
+        position: relative;
+        background-color: #000;
+        margin-left: 0px;
+    }
+
+    .bannertextsecs {
+        padding: 20px 25px;
+    }
+
+    .mblbannerimg {
+        background: url("../imgs/mblbannerimg.webp") no-repeat;
+        width: 100%;
+        height: 100%;
+        background-position: right;
+        background-size: contain;
+    }
+
+    /* bannersec style end */
+    .proimgs {
+        max-width: 200px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    .about-item,
+    .ag-item {
+        padding: 50px 0px;
+    }
+
+    .bannertextsec {
+        padding: 25px 15px;
+    }
+
+
+
+    .bannertext2 {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .bannertext3 {
+        width: 100%;
+    }
+
+    .bannertext1 {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .aglogo {
+        max-width: 100px;
+    }
+
+    .proimgs {
+        max-width: 190px;
+    }
+}
+
+
+@media screen and (max-width:400px) {
+
+
+    .proimgs {
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width:370px) {
+
+
+    .proimgs {
+        max-width: 130px;
+    }
+}
